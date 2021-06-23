@@ -1,5 +1,5 @@
 import Layout from './hoc/Layout/Layout';
-import Catalog from './containers/Catalog/Catalog';
+import Catalog from './components/Catalog/Catalog';
 
 const App = () => (
   <Layout>
