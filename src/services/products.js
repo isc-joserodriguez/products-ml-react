@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-export const getProducts = async (query) => {
+export const getProducts = async ({ query, setProducts }) => {
     try {
-        console.log()
         const products = await axios.get(`${process.env.REACT_APP_API}/search?query=${query}`);
-        return products;
+        const data = await products.data
+        setProducts(data);
     } catch (e) {
         console.log(e);
     }
