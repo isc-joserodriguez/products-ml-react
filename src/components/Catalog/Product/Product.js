@@ -11,7 +11,7 @@ const Product = ({
     condition
 }) => (
     <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={thumbnail} />
+        <Card.Img variant='top' src={thumbnail} />
         <Card.Body>
             <Card.Title>${price}.00 {currency} </Card.Title>
             {title}
