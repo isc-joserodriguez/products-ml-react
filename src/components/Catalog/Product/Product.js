@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 const Product = ({
     title,
@@ -16,11 +16,10 @@ const Product = ({
             <Card.Title>${price}.00 {currency} </Card.Title>
             {title}
             <br />
-            {currency}
-            <br />
             {quantity}
             <br />
             {condition}
+            {/* used || new */}
             <br />
         </Card.Body>
     </Card>
