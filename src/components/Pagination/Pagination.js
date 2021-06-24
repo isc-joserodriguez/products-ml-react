@@ -12,20 +12,20 @@ const PaginationComponent = (props) => {
 
     for (let i = 0; i < pages; i++) {
         items.push(
-            <Pagination.Item key={i + 1} activeLabel='' active={i + 1 === page} onClick={() => props.setPage(i + 1)}>{i + 1}</Pagination.Item>
+            <Pagination.Item key={i + 1} active={i + 1 === page} onClick={() => { window.scrollTo(0, 0); props.setPage(i + 1); }}>{i + 1}</Pagination.Item>
         )
 
     }
 
     return (
-        <Pagination size="md">
-            <Pagination.First disabled={page === 1} onClick={() => props.setPage(1)} />
-            <Pagination.Prev disabled={page === 1} onClick={() => props.setPage(page - 1)} />
+        <Pagination size='md'>
+            <Pagination.First disabled={page === 1} onClick={() => { window.scrollTo(0, 0); props.setPage(1); }} />
+            <Pagination.Prev disabled={page === 1} onClick={() => { window.scrollTo(0, 0); props.setPage(page - 1); }} />
 
             {items}
 
-            <Pagination.Next disabled={page === pages} onClick={() => props.setPage(page + 1)} />
-            <Pagination.Last disabled={page === pages} onClick={() => props.setPage(pages)} />
+            <Pagination.Next disabled={page === pages} onClick={() => { window.scrollTo(0, 0); props.setPage(page + 1); }} />
+            <Pagination.Last disabled={page === pages} onClick={() => { window.scrollTo(0, 0); props.setPage(pages); }} />
         </Pagination>
     )
 }
