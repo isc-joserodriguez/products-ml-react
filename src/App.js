@@ -16,6 +16,7 @@ const App = () => {
       query={query}
       searchHandler={searchHandler}
       queryHandler={queryHandler}
+      number={products.length}
     >
       <Catalog
         products={products}

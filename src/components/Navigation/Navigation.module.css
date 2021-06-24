@@ -1,4 +1,25 @@
 .Navbar.Navbar {
-    padding: 5px 200px;
+    padding: 15px 200px;
     background-color: #FFF159;
+    height:10vh;
+    transition:all .5s;
+}
+
+.Navbar.Navbar.Empty {
+    height:100vh;
+    transition:all .5s;
+}
+
+@media (max-width: 800px) {
+    .Navbar.Navbar {
+        padding: 15px 100px;
+        background-color: #FFF159;
+    }
+}
+
+@media (max-width: 650px) {
+    .Navbar.Navbar {
+        padding: 15px 10px;
+        background-color: #FFF159;
+    }
 }
