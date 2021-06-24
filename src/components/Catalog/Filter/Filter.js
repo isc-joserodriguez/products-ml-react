@@ -39,22 +39,37 @@ const Filter = (props) => {
                 </Form.Group>
 
             </div>
-            <div className='mb-3 my-auto'>
+            <div className='mb-3 my-auto mr-3'>
                 <Form.Check
                     type='checkbox'
                     label='Nuevo'
                     onChange={newChangeHandler}
-                    disabled={props.status == 2}
-                    checked={props.status == 1}
+                    disabled={props.status === 2}
+                    checked={props.status === 1}
                 />
                 <Form.Check
                     type='checkbox'
                     label='Usado'
                     onChange={usedChangeHandler}
-                    disabled={props.status == 1}
-                    checked={props.status == 2}
+                    disabled={props.status === 1}
+                    checked={props.status === 2}
                 />
             </div>
+            <div >
+                Elementos:
+            </div>
+            <div className='mx-3'>
+                <Form.Group className='my-auto'>
+                    <Form.Control as='select' onChange={(e)=>props.setElementsByPage(+e.target.value)}>
+                        <option value='30'>30</option>
+                        <option value='20'>20</option>
+                        <option value='10'>10</option>
+                        <option value='5'>5</option>
+                    </Form.Control>
+                </Form.Group>
+
+            </div>
+
         </div>
     )
 }

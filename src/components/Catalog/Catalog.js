@@ -71,6 +71,7 @@ const Catalog = (props) => {
                 status={status}
                 number={products.length}
                 hidden={products.length === 0 && status === 0}
+                setElementsByPage={setElementsByPage}
             />
             {products.length !== 0 ?
                 <>
