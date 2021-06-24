@@ -9,6 +9,7 @@ const Layout = (props) => (
             query={props.query}
             searchHandler={props.searchHandler}
             queryHandler={props.queryHandler}
+            number={props.number}
         />
         <main className={classes.Layout}>
             {props.children}

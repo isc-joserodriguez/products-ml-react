@@ -19,14 +19,17 @@ const Filter = (props) => {
     }
 
     return (
-        <div className='d-flex justify-content-end align-items-center'>
-            <div className="mr-auto">
+        <div
+            className={!props.hidden ? 'd-flex justify-content-end align-items-center pt-2' : ''}
+            style={{ display: 'none' }}
+        >
+            <div className='mr-auto'>
                 {props.number} Articulos
             </div>
             <div >
                 Ordenar por:
             </div>
-            <div className='mr-3'>
+            <div className='mx-3'>
                 <Form.Group className='my-auto'>
                     <Form.Control as='select' onChange={changeHandler}>
                         <option value='1'>Más relevantes</option>

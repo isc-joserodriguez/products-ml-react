@@ -59,7 +59,9 @@ const Catalog = (props) => {
 
     useEffect(() => {
         setProducts(originalProducts)
-    }, [originalProducts])
+        setStatus(0);
+        setOrder(1);
+    }, [originalProducts]);
 
     return (
         <Container className={classes.Catalog}>
@@ -68,28 +70,37 @@ const Catalog = (props) => {
                 statusHandler={statusHandler}
                 status={status}
                 number={products.length}
+                hidden={products.length === 0 && status === 0}
             />
-            <Row>
-                {[...products].splice(elementsByPage * (page - 1), elementsByPage).map(product => (
-                    <Product
-                        key={product.id}
-                        title={product.title}
-                        price={product.price}
-                        currency={product.currency_id}
-                        quantity={product.available_quantity}
-                        thumbnail={product.thumbnail}
-                        condition={product.condition}
-                    />
-                ))}
-            </Row>
-            <div className='d-flex justify-content-center'>
-                <Pagination
-                    elements={products}
-                    page={page}
-                    setPage={setPage}
-                    elementsByPage={elementsByPage}
-                />
-            </div>
+            {products.length !== 0 ?
+                <>
+                    <Row className='my-4 justify-content-center'>
+                        {[...products].splice(elementsByPage * (page - 1), elementsByPage).map(product => (
+                            <Product
+                                key={product.id}
+                                title={product.title}
+                                price={product.price}
+                                currency={product.currency_id}
+                                quantity={product.available_quantity}
+                                thumbnail={product.thumbnail}
+                                condition={product.condition}
+                            />
+                        ))}
+                    </Row>
+                    <div className='d-flex justify-content-center'>
+                        <Pagination
+                            elements={products}
+                            page={page}
+                            setPage={setPage}
+                            elementsByPage={elementsByPage}
+                        />
+                    </div>
+                </> :
+                (products.length === 0 && status !== 0) &&
+                <div className='d-flex justify-content-center align-items-center'>
+                    <h1>El filtro no arrojó resultados.</h1>
+                </div>
+            }
         </Container>
     )
 }

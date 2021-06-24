@@ -9,7 +9,8 @@ const Navigation = (props) => {
     const {
         searchHandler,
         queryHandler,
-        query
+        query,
+        number
     } = props;
 
     const inputChange = (event) => {
@@ -21,7 +22,7 @@ const Navigation = (props) => {
         searchHandler(query);
     }
     return (
-        <Navbar bg='warning' className={classes.Navbar}>
+        <Navbar className={`${classes.Navbar} ${number === 0 ? classes.Empty : ''}`}>
             <Navbar.Brand>
                 <img
                     src={Logo}
@@ -29,8 +30,8 @@ const Navigation = (props) => {
                 />
             </Navbar.Brand>
             <Form className='d-flex w-100' onSubmit={submitHandler}>
-                <Form.Control size='lg' type='text' placeholder='Search' className='mr-2' value={query} onChange={inputChange} />
-                <Button type='submit' variant='outline-dark'>Search</Button>
+                <Form.Control size='lg' type='text' placeholder='Buscar producto...' className='mr-2' value={query} onChange={inputChange} />
+                <Button type='submit' variant='outline-dark'>Buscar</Button>
             </Form>
         </Navbar>
     )
