@@ -10,6 +10,11 @@
     transition:all .5s;
 }
 
+.LogoMin{
+    height:50px;
+    display: none;
+}
+
 @media (max-width: 800px) {
     .Navbar.Navbar {
         padding: 15px 100px;
@@ -21,5 +26,14 @@
     .Navbar.Navbar {
         padding: 15px 10px;
         background-color: #FFF159;
+    }
+}
+
+@media (max-width: 500px) {
+    .LogoMin{
+        display: inline-block;
+    }
+    .Logo{
+        display: none;
     }
 }

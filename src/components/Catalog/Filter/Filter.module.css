@@ -1,0 +1,14 @@
+.Filter {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.Filter.Hidden {
+    display: none !important;
+}
+
+.Salto {
+    display: none;
+}

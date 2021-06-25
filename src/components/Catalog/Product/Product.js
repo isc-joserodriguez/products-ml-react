@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Card } from 'react-bootstrap';
 
+import classes from './Product.module.css';
+
 const Product = ({
     title,
     price,
@@ -10,23 +12,18 @@ const Product = ({
     thumbnail,
     condition
 }) => (
-    <Card
-        style={{ width: '210px', margin: '5px' }}
-    >
+    <Card className={classes.Product} >
         <div
             style={{
                 background: `url(${thumbnail}) 50% 50% no-repeat`,
-                width: '210px',
+                width: '100%',
                 height: '210px',
             }}
         />
 
 
         <Card.Body className='d-flex flex-column justify-content-between'>
-            <Card.Title style={{
-                borderBottom: '1px solid gray',
-                paddingBottom: '10px'
-            }}>${price}.00 {currency} </Card.Title>
+            <Card.Title className={classes.Title}>${price}.00 {currency} </Card.Title>
             <div className='text-muted'>
                 {title}
             </div>
@@ -35,14 +32,21 @@ const Product = ({
                     Stock: {quantity}
                 </div>
                 <span
-                    style={{
-                        color: condition === 'new' ? 'green' : 'red',
-                        border: `1px solid ${condition === 'new' ? 'green' : 'red'}`,
-                        padding: '2px 15px',
-                        borderRadius: '15px'
-                    }}
+                    className={
+                        condition === 'new' ?
+                            classes.New :
+                            condition === 'used' ?
+                                classes.Used :
+                                classes.NE
+                    }
                 >
-                    {condition}
+                    {
+                        condition === 'new' ?
+                            'Nuevo' :
+                            condition === 'used' ?
+                                'Usado' : 'N/E'
+
+                    }
                 </span>
 
 

@@ -8,14 +8,25 @@ const PaginationComponent = (props) => {
         page
     } = props;
 
-    const pages = Math.ceil(elements.length / elementsByPage), items = [];
+    const pages = Math.ceil(elements.length / elementsByPage)
+    let items = [];
 
     for (let i = 0; i < pages; i++) {
         items.push(
             <Pagination.Item key={i + 1} active={i + 1 === page} onClick={() => { window.scrollTo(0, 0); props.setPage(i + 1); }}>{i + 1}</Pagination.Item>
         )
-
     }
+
+    if (pages > 6) {
+        items = items.splice(
+            page < 4 ?
+                0 :
+                pages < page + 3 ?
+                    pages - 6 :
+                    page - 3
+            , 6);
+    }
+
 
     return (
         <Pagination size='md'>

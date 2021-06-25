@@ -39,11 +39,17 @@ const Catalog = (props) => {
         );
     }
 
+    const elemetsChangeHandler = (elements) => {
+        setPage(1);
+        setElementsByPage(elements);
+    }
+
     const filter = (products, status) => {
         const statusFunc = {
             0: (products) => products,
             1: (products) => products.filter(product => product.condition === 'new'),
-            2: (products) => products.filter(product => product.condition === 'used')
+            2: (products) => products.filter(product => product.condition === 'used'),
+            3: (products) => products.filter(product => product.condition === 'not_specified')
         }
         return statusFunc[status]([...products])
     }
@@ -69,12 +75,14 @@ const Catalog = (props) => {
                 orderHandler={orderHandler}
                 statusHandler={statusHandler}
                 status={status}
-                number={products.length}
                 hidden={products.length === 0 && status === 0}
-                setElementsByPage={setElementsByPage}
+                elemetsChangeHandler={elemetsChangeHandler}
             />
             {products.length !== 0 ?
                 <>
+                    <div className='mt-3 mb-0'>
+                        <b> {products.length} Articulos </b>
+                    </div>
                     <Row className='my-4 justify-content-center'>
                         {[...products].splice(elementsByPage * (page - 1), elementsByPage).map(product => (
                             <Product
