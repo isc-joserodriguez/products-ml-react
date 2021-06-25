@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/products-ml-react/static/css/main.b926f1ce.chunk.css",
-    "main.js": "/products-ml-react/static/js/main.f53b2e9d.chunk.js",
-    "main.js.map": "/products-ml-react/static/js/main.f53b2e9d.chunk.js.map",
-    "runtime-main.js": "/products-ml-react/static/js/runtime-main.ede7f4bd.js",
-    "runtime-main.js.map": "/products-ml-react/static/js/runtime-main.ede7f4bd.js.map",
+    "main.css": "/products-ml-react/static/css/main.42aaf7b2.chunk.css",
+    "main.js": "/products-ml-react/static/js/main.e866b9a4.chunk.js",
+    "main.js.map": "/products-ml-react/static/js/main.e866b9a4.chunk.js.map",
+    "runtime-main.js": "/products-ml-react/static/js/runtime-main.62c8a144.js",
+    "runtime-main.js.map": "/products-ml-react/static/js/runtime-main.62c8a144.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/products-ml-react/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.0095b27d.chunk.js": "/products-ml-react/static/js/2.0095b27d.chunk.js",
-    "static/js/2.0095b27d.chunk.js.map": "/products-ml-react/static/js/2.0095b27d.chunk.js.map",
-    "static/js/3.b42360f1.chunk.js": "/products-ml-react/static/js/3.b42360f1.chunk.js",
-    "static/js/3.b42360f1.chunk.js.map": "/products-ml-react/static/js/3.b42360f1.chunk.js.map",
+    "static/js/2.753d9a8b.chunk.js": "/products-ml-react/static/js/2.753d9a8b.chunk.js",
+    "static/js/2.753d9a8b.chunk.js.map": "/products-ml-react/static/js/2.753d9a8b.chunk.js.map",
+    "static/js/3.09569ad0.chunk.js": "/products-ml-react/static/js/3.09569ad0.chunk.js",
+    "static/js/3.09569ad0.chunk.js.map": "/products-ml-react/static/js/3.09569ad0.chunk.js.map",
     "index.html": "/products-ml-react/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/products-ml-react/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.b926f1ce.chunk.css.map": "/products-ml-react/static/css/main.b926f1ce.chunk.css.map",
-    "static/js/2.0095b27d.chunk.js.LICENSE.txt": "/products-ml-react/static/js/2.0095b27d.chunk.js.LICENSE.txt"
+    "static/css/main.42aaf7b2.chunk.css.map": "/products-ml-react/static/css/main.42aaf7b2.chunk.css.map",
+    "static/js/2.753d9a8b.chunk.js.LICENSE.txt": "/products-ml-react/static/js/2.753d9a8b.chunk.js.LICENSE.txt",
+    "static/media/logo-min.530dca93.svg": "/products-ml-react/static/media/logo-min.530dca93.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ede7f4bd.js",
+    "static/js/runtime-main.62c8a144.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.0095b27d.chunk.js",
-    "static/css/main.b926f1ce.chunk.css",
-    "static/js/main.f53b2e9d.chunk.js"
+    "static/js/2.753d9a8b.chunk.js",
+    "static/css/main.42aaf7b2.chunk.css",
+    "static/js/main.e866b9a4.chunk.js"
   ]
 }
