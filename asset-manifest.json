@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/products-ml-react/static/css/main.42aaf7b2.chunk.css",
-    "main.js": "/products-ml-react/static/js/main.e866b9a4.chunk.js",
-    "main.js.map": "/products-ml-react/static/js/main.e866b9a4.chunk.js.map",
+    "main.js": "/products-ml-react/static/js/main.14b96539.chunk.js",
+    "main.js.map": "/products-ml-react/static/js/main.14b96539.chunk.js.map",
     "runtime-main.js": "/products-ml-react/static/js/runtime-main.62c8a144.js",
     "runtime-main.js.map": "/products-ml-react/static/js/runtime-main.62c8a144.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/products-ml-react/static/css/2.4c97ca4f.chunk.css",
@@ -14,13 +14,13 @@
     "static/css/2.4c97ca4f.chunk.css.map": "/products-ml-react/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.42aaf7b2.chunk.css.map": "/products-ml-react/static/css/main.42aaf7b2.chunk.css.map",
     "static/js/2.753d9a8b.chunk.js.LICENSE.txt": "/products-ml-react/static/js/2.753d9a8b.chunk.js.LICENSE.txt",
-    "static/media/logo-min.530dca93.svg": "/products-ml-react/static/media/logo-min.530dca93.svg"
+    "static/media/logo-min.c07f96f7.svg": "/products-ml-react/static/media/logo-min.c07f96f7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.62c8a144.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.753d9a8b.chunk.js",
     "static/css/main.42aaf7b2.chunk.css",
-    "static/js/main.e866b9a4.chunk.js"
+    "static/js/main.14b96539.chunk.js"
   ]
 }
